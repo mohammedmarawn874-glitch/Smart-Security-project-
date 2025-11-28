@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ===== BODY — Center Everything ===== */
+body {
+  background: linear-gradient(to bottom, #000000, #001133, #04277a, #063e8b);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   /* ده اللي يخلي كل حاجة في النص */
+  min-height: 100vh;
+  text-align: center;    /* يخلي الكلام في النص */
+}
+
+/* ===== CARD ===== */
+.card {
+  background-color: #fff;
+  width: 500px;
+  height: auto;
+  box-shadow: 0 -5px 100px rgba(1 1 1 / 100%);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 25px auto;      /* يخليها في النص */
+}
+
+/* ===== INFO TEXT ===== */
+.info {
+  padding-top: 50px;
+  color:red;
+}
+h3{
+
+    padding-top: 50px;
+  color: #000000;
+}
+/* ===== BUTTON AREA ===== */
+.btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  width: 300px;
+  text-decoration: none;
+  padding: 1em 2em;
+  background-color: #161a20;
+  border: none;
+  color: #fff;
+  border-radius: 1000px;
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  height: 107%;
+  width: 102%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  z-index: -1;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  a {
+    width: 80%;
+    font-size: 14px;
+  }
+}
